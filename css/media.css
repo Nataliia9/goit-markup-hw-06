@@ -1,0 +1,326 @@
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 426px;
+  }
+}
+/* -----------------768px ------------------ */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 766px;
+  }
+  .header {
+    padding: 0;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-menu-list {
+    display: flex;
+    gap: 40px;
+  }
+  .header-menu-link {
+    font-size: 16px;
+    line-height: 1.5; /* 150% */
+    letter-spacing: 0.02em;
+  }
+  .header-soc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 8px;
+  }
+
+  .header-soc-link {
+    color: var(--slate, #434455);
+    font-size: 12px;
+    line-height: 1.17; /* 116.667% */
+    letter-spacing: 0.04em;
+  }
+  .header-address {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-link {
+    display: block;
+    margin-right: 120px;
+  }
+  .current {
+    position: relative;
+    color: var(--pressed-state);
+  }
+  .current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    justify-content: center;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--pressed-state);
+  }
+  .mob-menu-open-btn {
+    display: none;
+  }
+  .hero {
+    height: 436px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-tab-2x.jpg);
+    }
+  }
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07; /* 107.143% */
+    width: 496px;
+    margin-bottom: 36px;
+  }
+  .advantages-list {
+    gap: 72px 24px;
+  }
+  .advantages-item {
+    width: calc((100% - 24px) / 2);
+    min-width: 356px;
+  }
+  .advantages-title {
+    text-align: left;
+  }
+  .team-list {
+    display: flex;
+    gap: 64px 24px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .team-card {
+    width: calc((100% - 24px) / 2);
+    max-width: 264px;
+    margin: 0;
+  }
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .footer-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-link {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 18px;
+  }
+
+  .footer-right {
+    margin-left: 24px;
+  }
+
+  .sosial-links-title {
+    text-align: left;
+  }
+
+  .footer-form-title {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .footer-form {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+  }
+
+  .footer-label {
+    height: 40px;
+  }
+
+  .portf-filtr {
+    justify-content: center;
+    padding: 64px 0;
+  }
+  .portf-list {
+    gap: 72px 24px;
+    margin-bottom: 128px;
+  }
+  .portf-list:last-child {
+    justify-content: left;
+  }
+  .portf-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+/* --------------------1158px --------------------- */
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+  .header {
+    padding: 16px 0;
+  }
+  .header-menu-list {
+    display: flex;
+  }
+  .header-soc-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .header-address {
+    margin-left: auto;
+  }
+  .logo-link {
+    margin-right: 76px;
+  }
+  .header-soc-link {
+    color: var(--text);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 16px;
+    line-height: 1.5; /* 150% */
+    letter-spacing: 0.02em;
+  }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-opt.jpg);
+    height: 600px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-opt-2x.jpg);
+    }
+  }
+  .hero-title {
+    color: var(--white-background);
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    margin: 0 auto 48px;
+    max-width: 496px;
+  }
+  .advantages {
+    padding: 120px 0;
+  }
+  .advantages-item {
+    width: calc((100% - 3 * 24px) / 4);
+    min-width: 264px;
+  }
+  .advantages-list {
+    gap: 24px;
+  }
+  .advantages-top {
+    display: flex;
+  }
+  .advantages-title {
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .adventges-text {
+    font-weight: 400;
+  }
+  .we-doing {
+    display: block;
+  }
+  .team-list {
+    display: flex;
+    max-width: 100%;
+    gap: 24px;
+  }
+  .team-card {
+    width: calc((100% - 72px) / 4);
+    min-width: 264px;
+  }
+  .customers {
+    padding: 120px 0;
+  }
+  .customers-list {
+    gap: 24px;
+  }
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+  }
+  .footer {
+    padding-top: 100px;
+  }
+  .footer-list {
+    margin-bottom: 0;
+  }
+  .footer-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .footer-link {
+    display: inline-block;
+  }
+  .footer-left {
+    margin-right: 120px;
+    margin-bottom: 0;
+  }
+  .footer-text {
+    margin-bottom: 0;
+  }
+  .footer-form-title {
+    margin-bottom: 0;
+  }
+  .footer-input {
+    width: 264px;
+  }
+  .footer-form {
+    display: flex;
+    gap: 24px;
+  }
+  .footer-form-right {
+    margin-left: 50px;
+  }
+  .footer-form-btn {
+    min-width: 77px;
+  }
+  .portfolio {
+    padding-bottom: 120px;
+  }
+  .portf-filtr {
+    padding-top: 100px;
+    padding-bottom: 72px;
+    justify-content: center;
+    gap: 24px;
+  }
+  .portf-list {
+    gap: 48px 24px;
+  }
+  .portf-item {
+    width: calc((100% - 2 * 24px) / 3);
+  }
+}

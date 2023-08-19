@@ -18,6 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
 
   <body>
@@ -57,6 +58,104 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="mob-menu-open-btn" data-menu-open>
+          <svg class="hamburger-btn" width="32" height="22">
+            <use href="./images/icons.svg#icon-hamburger-btn-1"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="top-menu">
+          <button type="button" class="mob-menu-close-btn" data-menu-close>
+            <svg class="close-mob-menu-btn" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-mob-menu-btn"></use>
+          </svg>
+          </button>
+
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link current" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-menu">
+          <address class="mob-menu-address">
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a class="mob-soc-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-soc-item">
+                <a class="mob-soc-link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-f-list list">
+            <li class="mob-f-soc-item">
+              <a
+                class="mob-f-soc-link link"
+                href=""
+                target="_blank"
+                rel="noopener no-referrer"
+              >
+                <svg class="mob-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-f-soc-item">
+              <a
+                class="mob-f-soc-link link"
+                href="twitter"
+                target="_blank"
+                rel="noopener no-referrer"
+              >
+                <svg class="mob-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-f-soc-item">
+              <a
+                class="mob-f-soc-link link"
+                href="facebook"
+                target="_blank"
+                rel="noopener no-referrer"
+              >
+                <svg class="mob-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-f-soc-item">
+              <a
+                class="mob-f-soc-link link"
+                href="linkedin"
+                target="_blank"
+                rel="noopener no-referrer"
+              >
+                <svg class="mob-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -83,8 +182,8 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="advantages-title section-subtitle">Strategy</h3>
-              <p class="adventges-text section-text">
+              <h3 class="advantages-title">Strategy</h3>
+              <p class="adventges-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -95,8 +194,8 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="advantages-title section-subtitle">Punctuality</h3>
-              <p class="adventges-text section-text">
+              <h3 class="advantages-title">Punctuality</h3>
+              <p class="adventges-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -107,9 +206,9 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="advantages-title section-subtitle">Diligence</h3>
+              <h3 class="advantages-title">Diligence</h3>
 
-              <p class="adventges-text section-text">
+              <p class="adventges-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -120,8 +219,8 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="advantages-title section-subtitle">Technologies</h3>
-              <p class="adventges-text section-text">
+              <h3 class="advantages-title">Technologies</h3>
+              <p class="adventges-text">
                 Design practice on digital experiences. We bring forth a deep
                 passion for problem-solving.
               </p>
@@ -136,6 +235,10 @@
           <ul class="we-doing-list list">
             <li class="we-doing-item">
               <img
+                srcset="
+                  ./images/we-doing-img-1-min.jpg    1x,
+                  ./images/we-doing-img-1-min-2x.jpg 2x
+                "
                 src="./images/we-doing-img-1-min.jpg"
                 alt="PC screen"
                 width="360"
@@ -144,6 +247,10 @@
             </li>
             <li class="we-doing-item">
               <img
+                srcset="
+                  ./images/we-doing-img-2-min.jpg    1x,
+                  ./images/we-doing-img-2-min-2x.jpg 2x
+                "
                 src="./images/we-doing-img-2-min.jpg"
                 alt="Mobile applications"
                 width="360"
@@ -152,6 +259,10 @@
             </li>
             <li class="we-doing-item">
               <img
+                srcset="
+                  ./images/we-doing-img-3-min.jpg    1x,
+                  ./images/we-doing-img-3-min-2x.jpg 2x
+                "
                 src="./images/we-doing-img-3-min.jpg"
                 alt="PC and Mobile applications"
                 width="360"
@@ -683,5 +794,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+     <script src="./js/menu.js"></script>
   </body>
 </html>
