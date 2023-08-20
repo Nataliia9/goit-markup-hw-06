@@ -2,6 +2,13 @@
   .container {
     max-width: 426px;
   }
+  .mob-f-list {
+    gap: 56px;
+  }
+
+  .footer-input {
+    width: 264px;
+  }
 }
 /* -----------------768px ------------------ */
 @media screen and (min-width: 768px) {
@@ -89,7 +96,8 @@
   .hero-title {
     font-size: 56px;
     line-height: 1.07; /* 107.143% */
-    width: 496px;
+    /* ---------width on max-width--------- */
+    max-width: 496px;
     margin-bottom: 36px;
   }
   .advantages-list {
@@ -115,12 +123,17 @@
     margin: 0;
   }
   .customers-item {
-    width: calc((100% - 48px) / 3);
+    /* width: calc((100% - 48px) / 3); */
+    width: 168px;
   }
-
+  .customers-list {
+    gap: 72px 24px;
+  }
   .footer-wrap {
     display: flex;
     flex-wrap: wrap;
+    /* ---------put max-width to put container in the centre */
+    max-width: 550px;
   }
 
   .footer-link {
